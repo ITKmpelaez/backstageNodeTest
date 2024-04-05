@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-component
+  title: test Component
+  description: test
+spec:
+  system: examples
+  lifecycle: development
+  type: website
+  owner: group:icm
