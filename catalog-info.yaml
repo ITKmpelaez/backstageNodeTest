@@ -8,4 +8,4 @@ spec:
   system: examples
   lifecycle: development
   type: website
-  owner: group:icm
+  owner: icm
