@@ -1,11 +1,11 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-component
-  title: test Component
-  description: test
+  name: TEST
 spec:
-  system: examples
-  lifecycle: development
-  type: website
+  type: iac
+  lifecycle: experimental
   owner: icm
+  system: examples
+  providesApis: [example-grpc-api]
