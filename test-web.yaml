@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test-web
+  title: test-web
+  description: Contains the admin web portal including corresponding backends.
+spec:
+  owner: group:icm
+ 
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: test-web-location
+  title: test-web Location
+spec:
+  targets:
+    - ./**/catalog-info.yaml
+    #  type: file
