@@ -1,5 +1,13 @@
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: Application
+spec:
+  owner: icm
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: TEST
@@ -7,5 +15,5 @@ spec:
   type: iac
   lifecycle: experimental
   owner: icm
-  system: examples
+  system: Application
   providesApis: [example-grpc-api]
